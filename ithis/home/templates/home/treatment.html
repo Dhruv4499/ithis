@@ -1,0 +1,235 @@
+{% extends 'home/base.html' %}
+{% block title %}ITHIS{% endblock title %} 
+{% block treatment %}active{% endblock treatment %}
+{% block body %}
+{% load static %}
+
+    <section class="page-title treatment-page">
+        <div class="container-fluid px-md-5 px-sm-3 px-2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="text-center result-text">Get all surgery Packages</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="funfacts-section">
+        <div class="container auto-count">
+            <div class="row">
+                <div class="column counter-column col-lg-4 col-sm-6" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner wow animated fadeInLeft">
+                        <div class="icon-outer">
+                            <div class="shape-one">
+                                <img src="{% static 'img/shape-39.png' %}">
+                            </div>
+                            <div class="shape-two">
+                                <img src="{% static 'img/shape-38.png' %}">
+                            </div>
+                            <div class="icon">
+                                <img src="{% static 'img/icon-1.png' %}">
+                            </div>
+                            <div class="icon-hover">
+                                <img src="{% static 'img/icon-1.png' %}">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count-outer counted count-box">
+                                <span class="count-text">4.6</span>
+                                <span>k+</span>
+                            </div>
+                            <p class="text">Exp. Doctors Database</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column counter-column col-lg-4 col-sm-6" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner wow animated fadeInLeft">
+                        <div class="icon-outer">
+                            <div class="shape-one">
+                                <img src="{% static 'img/shape-39.png' %}">
+                            </div>
+                            <div class="shape-two">
+                                <img src="{% static 'img/shape-38.png' %}">
+                            </div>
+                            <div class="icon">
+                                <img src="{% static 'img/icon-2.png' %}">
+                            </div>
+                            <div class="icon-hover">
+                                <img src="{% static 'img/icon-2.png' %}">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count-outer counted count-box">
+                                <span class="count-text">3.8</span>
+                                <span>k+</span>
+                            </div>
+                            <p class="text">Patients Appointments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column counter-column col-lg-4 col-sm-6" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner wow animated fadeInLeft">
+                        <div class="icon-outer">
+                            <div class="shape-one">
+                                <img src="{% static 'img/shape-39.png' %}">
+                            </div>
+                            <div class="shape-two">
+                                <img src="{% static 'img/shape-38.png' %}">
+                            </div>
+                            <div class="icon">
+                                <img src="{% static 'img/icon-3.png' %}">
+                            </div>
+                            <div class="icon-hover">
+                                <img src="{% static 'img/icon-3.png' %}">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="count-outer counted count-box">
+                                <span class="count-text">1.9</span>
+                                <span>k+</span>
+                            </div>
+                            <p class="text">Hospitals Clinics Listed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filter">
+        <div class="doctors-page">
+            <div class="container-fluid px-md-5 px-sm-3 px-2">
+                <div class="row">
+                    <div class="treatment_content col-lg-11 m-auto">
+                        <div class="row align-items-center mb-5">
+                            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                                <h4>Choose from 95 Procedures</h4>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-lg-5 col-md-5 col-sm-5 col-12 all_treatment_sp">
+                                        <select class="form-control select2" id="ddlSearchSpeciality">
+                                            <option value="" selected hidden>Select Speciality</option>
+                                            <option>ENT</option>
+                                            <option>OPTHALMOLOGY</option>
+                                            <option>CARDIOLOGY</option>
+                                            <option>GENERAL SURGERY</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-5 col-md-5 col-sm-5 col-12 all_treatment_sp">
+                                        <select class="form-control select2" id="ddlSearchTreatment">
+                                            <option value="" selected hidden>Select Treatment</option>
+                                            <option>Angiography</option>
+                                            <option>Angioplasty</option>
+                                            <option>CABG</option>
+                                            <option>Temporary Pacemaker</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-2 col-md-2 col-sm-2 col-12">
+                                        <button class="btn btn-go">Go</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partialDivData">
+                            <div class="row treatment-row">
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">Angiography</p>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">Angioplasty</p>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">ENT</p>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">CABG</p>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">FESS</p>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12 text-center">
+                                    <a href="/" class="treatment-url">
+                                        <div class="treatment-img">
+                                            <img src="{% static 'img/3.png' %}" class="img-fluid">
+                                        </div>
+                                        <p class="treatment-name">Temporary Pacemaker</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-container">
+        <div class="dock">
+            <ul>
+                <li>
+                    <span>Consult Now</span>
+                    <a href="/">
+                        <img src="{% static 'img/consult.png' %}">
+                    </a>
+                </li>
+                <li>
+                    <span>Consult Now</span>
+                    <a href="/">
+                        <img src="{% static 'img/consult.png' %}">
+                    </a>
+                </li>
+                <li>
+                    <span>Consult Now</span>
+                    <a href="/">
+                        <img src="{% static 'img/consult.png' %}">
+                    </a>
+                </li>
+                <li>
+                    <span>Consult Now</span>
+                    <a href="/">
+                        <img src="{% static 'img/consult.png' %}">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <style>
+        .main-header {
+            position: relative !important;
+        }
+
+        .treatment-page {
+            position: relative;
+            background-image: url(/static/img/all-treatment_banner.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+{% endblock body %}

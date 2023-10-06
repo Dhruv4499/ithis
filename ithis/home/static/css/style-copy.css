@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins';
+}
+
+img {
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navbar-brand .logo_img {
+    max-width: 112px;
+    width: 100%;
+}
+
+.container-fluid .logo_cover {
+    width: 15%;
+}
+
+.container-fluid .collapse.navbar-collapse {
+    width: 60%;
+}
+
+.collapse.navbar-collapse .nav-link {
+    font-size: 17px;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 15px;
+}
+
+.collapse.navbar-collapse .nav-link:hover {
+    color: #00B8A8;
+}
+
+.collapse.navbar-collapse .nav-link.active {
+    color: #00b8a8;
+}
+
+.container-fluid .login-search {
+    width: 25%;
+}
+.container-fluid .login-search i {
+   font-size: 30px;
+}
+.container-fluid .login-btn {
+    display: inline-block;
+    position: relative;
+    min-width: 160px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(26deg, #06a6c1, #25adc369);
+    padding: 10px 35px;
+    border-radius: 30px;
+    overflow: hidden;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.container-fluid .login-btn span {
+    position: relative;
+    line-height: 1;
+}
+
+.container-fluid .login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    width: 0%;
+    height: 100%;
+    background-color: #34a3d5;
+    transition: all 0.5s ease;
+}
+
+.container-fluid .login-btn:hover::before {
+    width: 100%;
+}
+
+.auto-container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.container-fluid .login_patient,
+.container-fluid .sign-up-patient {
+    margin-top: 35px;
+}
+
+.container-fluid .login_patient h1,
+.container-fluid .sign-up-patient h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+.container-fluid .login_patient p,
+.container-fluid .sign-up-patient p {
+    font-size: 19px;
+}
+
+.container-fluid .login_patient p .switch-sign-up,
+.container-fluid .sign-up-patient p .switch-login {
+    color: #06a6c1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container-fluid .position-relative.form-group.mb-4 label {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.container-fluid .login_patient .input-group-prepend {
+    position: absolute;
+    left: 3px;
+    top: 48px;
+    z-index: 6;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-right: 1px solid #1f2471;
+    margin-right: 10px;
+}
+
+.container-fluid .login_patient .input-group-prepend span,
+.container-fluid .sign-up-patient .input-group-prepend span {
+    background: transparent;
+    height: 100%;
+    padding: 6px 12px;
+    border: none;
+}
+
+.container-fluid .login_patient .input-group-prepend span i,
+.container-fluid .sign-up-patient .input-group-prepend span i {
+    color: #1f2471;
+}
+
+.container-fluid .form-control {
+    border-radius: 5px !important;
+    width: 100% !important;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #edf2f7;
+    border: 0px;
+    padding-left: 54px;
+    height: 47px;
+}
+
+.container-fluid .forgot_password {
+    font-weight: 600;
+    font-size: 16px;
+    color: #06a6c1;
+    transition: all 0.3s ease;
+}
+
+.container-fluid .forgot_password:hover {
+    color: #000;
+}
+
+.container-fluid .btn-login,
+.container-fluid .btn-sign-up {
+    width: 100%;
+    color: white;
+    background-color: #06a6c1;
+    border: 0;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: poppins;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container-fluid .btn-login:hover,
+.container-fluid .btn-sign-up:hover  {
+    color: black;
+}
+.container-fluid .sign-up-patient .input-group-prepend {
+   position: absolute;
+   left: 12px;
+   top: 48px;
+   z-index: 6;
+   transform: translateY(-50%);
+   background-color: transparent;
+   border-right: 1px solid #1f2471;
+   margin-right: 10px;
+}

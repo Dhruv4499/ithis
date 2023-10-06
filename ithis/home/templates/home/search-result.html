@@ -1,0 +1,265 @@
+{% extends 'home/base.html' %}
+{% block title %}ITHIS{% endblock title %}
+{% block body %}
+    <section class="page-title search-result-page">
+        <div class="container">
+            <h2 class="text-center result-text">Best Result for CABG</h2>
+        </div>
+    </section>
+    
+    <section class="filter">
+        <div class="container-fluid px-5">
+            <div class="search-section">
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <p class="mb-0">Select an option</p>
+                        <ul class="select-box">
+                            <li>
+                                <div class="single-checkbox">
+                                    <p class="option" id="option1">
+                                    <span><i class="fa-regular fa-circle-dot"></i></span>
+                                    Location
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-checkbox">
+                                    <p class="option" id="option2">
+                                    <span><i class="fa-regular fa-circle-dot"></i></span>
+                                    Speciality-Treatment
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-checkbox">
+                                    <p class="option" id="option3">
+                                        <span><i class="fa-regular fa-circle-dot"></i></span>
+                                        Price
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+                        <div class="location-list common" id="result1">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <select class="select2">
+                                    <option value="" selected hidden>Select Location</option>
+                                    <option>Borivali West</option>
+                                    <option>Kandivali West</option>
+                                    <option>Dombivali West</option>
+                                    <option>Malad West</option>
+                                </select>
+                            </div>                
+                        </div>
+                        <div class="speciality-list common" id="result2">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                </span>
+                                <select class="select2">
+                                    <option value="" selected hidden>Select Speciality</option>
+                                    <option>CABG</option>
+                                    <option>ENT</option>
+                                    <option>CARDIOLOGY</option>
+                                    <option>GENERAL SURGERY</option>
+                                </select>
+                            </div>         
+                        </div>
+                        <div class="price-list common" id="result3">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                </span>
+                                <select class="select2">
+                                    <option value="" selected hidden>Select Price</option>
+                                    <option>0-100000</option>
+                                    <option>100000-200000</option>
+                                    <option>200000-300000</option>
+                                    <option>300000-400000</option>
+                                </select>
+                            </div>         
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-suitcase-medical"></i>
+                            </span>
+                            <select class="select2">
+                                <option value="" selected hidden>Select Hospital</option>
+                                <option>Shelby</option>
+                                <option>Civil</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center mb-4">
+                        <button id="btnSearchAgain" class="btn search-all-btn">
+                            <span>Search again</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doctors-page">
+            <div class="container-fluid px-md-5 px-sm-3 px-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="doctor-wrapper">
+                            <div class="item-shorting">
+                                <h3>Showing Results</h3>
+                            </div>
+                            <div class="wrapper grid">
+                                <div class="list-view"></div>
+                                <div class="grid-view">
+                                    <div class="grid-cover">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-6 col-md-12 doctor-block">
+                                                <div class="inner-box">
+                                                    <div class="content">
+                                                        <div class="top-content">
+                                                            <h3 class="d-flex justify-content-between hospital-name">
+                                                                <label>Sharda Hospital</label>
+                                                                <span class="view-profile">
+                                                                    <a href="/">view</a>
+                                                                </span>
+                                                            </h3>
+                                                            <h3 class="doctor-name">
+                                                                <label>Dr. Afia Shaikh</label>
+                                                            </h3>
+                                                            <div class="designation">
+                                                                <label>CABG</label>
+                                                            </div>
+                                                            <div class="text">
+                                                                <i class="fa-solid fa-location-arrow"></i>
+                                                                <label>
+                                                                Neo Corporate Plaza, Kachpada, Malad
+                                                                West,</label
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="bed-price">
+                                                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                                        <label>165000.00</label>
+                                                                    </span>
+                                                                    <label>Private</label>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/" class="text-white theme-btn">
+                                                                        <span>Enquiry Now</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-12 doctor-block">
+                                                <div class="inner-box">
+                                                    <div class="content">
+                                                        <div class="top-content">
+                                                            <h3 class="d-flex justify-content-between hospital-name">
+                                                                <label>Sharda Hospital</label>
+                                                                <span class="view-profile">
+                                                                    <a href="/">view</a>
+                                                                </span>
+                                                            </h3>
+                                                            <h3 class="doctor-name">
+                                                                <label>Dr. Afia Shaikh</label>
+                                                            </h3>
+                                                            <div class="designation">
+                                                                <label>CABG</label>
+                                                            </div>
+                                                            <div class="text">
+                                                                <i class="fa-solid fa-location-arrow"></i>
+                                                                <label>
+                                                                Neo Corporate Plaza, Kachpada, Malad
+                                                                West,</label
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="bed-price">
+                                                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                                        <label>165000.00</label>
+                                                                    </span>
+                                                                    <label>Private</label>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/" class="text-white theme-btn">
+                                                                        <span>Enquiry Now</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-12 doctor-block">
+                                                <div class="inner-box">
+                                                    <div class="content">
+                                                        <div class="top-content">
+                                                            <h3 class="d-flex justify-content-between hospital-name">
+                                                                <label>Sharda Hospital</label>
+                                                                <span class="view-profile">
+                                                                    <a href="/">view</a>
+                                                                </span>
+                                                            </h3>
+                                                            <h3 class="doctor-name">
+                                                                <label>Dr. Afia Shaikh</label>
+                                                            </h3>
+                                                            <div class="designation">
+                                                                <label>CABG</label>
+                                                            </div>
+                                                            <div class="text">
+                                                                <i class="fa-solid fa-location-arrow"></i>
+                                                                <label>
+                                                                Neo Corporate Plaza, Kachpada, Malad
+                                                                West,</label
+                                                                >
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="bed-price">
+                                                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                                                        <label>165000.00</label>
+                                                                    </span>
+                                                                    <label>Private</label>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/" class="text-white theme-btn">
+                                                                        <span>Enquiry Now</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="post-pagination text-center">
+                                        <li><span class="current">1</span></li>
+                                        <li><a href="/">2</a></li>
+                                        <li><a href='/'>3</a></li>
+                                        <li><a href="/"><i class="fa-solid fa-arrow-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+{% endblock body %}
